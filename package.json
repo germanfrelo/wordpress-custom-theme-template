@@ -1,9 +1,10 @@
 {
-	"name": "wordpress-child-theme-starter-template",
+	"name": "block-theme-starter-template",
 	"version": "1.0.0",
 	"private": true,
-	"description": "My opinionated WordPress starter template for creating child themes of the latest default WordPress theme.",
+	"description": "Get a quick start on building modern WordPress websites with this starter block theme template. It comes with a curated and useful set of basic presets.",
 	"keywords": [
+		"block-theme",
 		"boilerplate-front-end",
 		"boilerplate-template",
 		"boilerplate-wordpress",
@@ -16,8 +17,6 @@
 		"template-repository",
 		"template",
 		"wordpress-boilerplate",
-		"wordpress-child-theme-starter-template",
-		"wordpress-child-theme",
 		"wordpress-custom-theme-template",
 		"wordpress-development",
 		"wordpress-site",
@@ -25,13 +24,13 @@
 		"wordpress-theme",
 		"wordpress"
 	],
-	"homepage": "https://github.com/germanfrelo/wordpress-child-theme-starter-template#readme",
+	"homepage": "https://github.com/germanfrelo/block-theme-starter-template#readme",
 	"bugs": {
-		"url": "https://github.com/germanfrelo/wordpress-child-theme-starter-template/issues"
+		"url": "https://github.com/germanfrelo/block-theme-starter-template/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/germanfrelo/wordpress-child-theme-starter-template.git"
+		"url": "https://github.com/germanfrelo/block-theme-starter-template.git"
 	},
 	"license": "GPL-2.0-or-later",
 	"author": "Germán Freixinós",
