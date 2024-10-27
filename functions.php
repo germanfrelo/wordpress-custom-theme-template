@@ -9,15 +9,14 @@
  * Load stylesheets on the front end of the website.
  *
  * @link https://developer.wordpress.org/themes/core-concepts/including-assets/#front-end-stylesheets
- * @link https://developer.wordpress.org/themes/advanced-topics/child-themes/#loading-style-css
  */
 
 function themeslug_enqueue_styles() {
 	// Load custom stylesheets
-	wp_enqueue_style( 'base-style', get_theme_file_uri( 'assets/css/base.css' ) );
-	wp_enqueue_style( 'layouts-style', get_theme_file_uri( 'assets/css/layouts.css' ) );
-	wp_enqueue_style( 'utility-classes-style', get_theme_file_uri( 'assets/css/utility-classes.css' ) );
-	wp_enqueue_style( 'gravity-forms-style', get_theme_file_uri( 'assets/css/gravity-forms.css' ) );
+	wp_enqueue_style( 'base-style', get_parent_theme_file_uri( 'assets/css/base.css' ) );
+	wp_enqueue_style( 'layouts-style', get_parent_theme_file_uri( 'assets/css/layouts.css' ) );
+	wp_enqueue_style( 'utility-classes-style', get_parent_theme_file_uri( 'assets/css/utility-classes.css' ) );
+	// wp_enqueue_style( 'gravity-forms-style', get_parent_theme_file_uri( 'assets/css/gravity-forms.css' ) );
 
 	// Load the theme's style.css file
 	wp_enqueue_style( 'themeslug-style', get_stylesheet_uri() );
@@ -34,12 +33,12 @@ add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_styles' );
 function themeslug_setup() {
 	add_editor_style( array(
 		// Load another custom stylesheets
-		get_theme_file_uri( 'assets/css/base.css' ),
-		get_theme_file_uri( 'assets/css/layouts.css' ),
-		get_theme_file_uri( 'assets/css/utility-classes.css' ),
-		get_theme_file_uri( 'assets/css/gravity-forms.css' ),
+		get_parent_theme_file_uri( 'assets/css/base.css' ),
+		get_parent_theme_file_uri( 'assets/css/layouts.css' ),
+		get_parent_theme_file_uri( 'assets/css/utility-classes.css' ),
+		// get_parent_theme_file_uri( 'assets/css/gravity-forms.css' ),
 
-		// Load the theme's style.css file
+		// Load the active theme's main style.css file
 		get_stylesheet_uri()
 	) );
 }
