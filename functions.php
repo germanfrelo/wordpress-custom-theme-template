@@ -46,30 +46,6 @@ function themeslug_setup() {
 add_action( 'after_setup_theme', 'themeslug_setup' );
 
 /**
- * Register custom block style variations.
- *
- * @link https://developer.wordpress.org/themes/features/block-style-variations/
- * @link https://developer.wordpress.org/reference/functions/register_block_style/
- */
-
-function themeslug_block_style_variations() {
-	// register_block_style(
-	// 	'core/_____',
-	// 	array(
-	// 		'name'         => '__________',
-	// 		'label'        => __( '__________', 'themeslug' ),
-	// 		'inline_style' => '
-	// 			.wp-block-_____.is-style-__________ {
-	// 				// Your block styles here...
-	// 			}
-	// 		'
-	// 	)
-	// );
-}
-
-add_action( 'init', 'themeslug_block_style_variations' );
-
-/**
  * Enqueue custom block stylesheets.
  *
  * @link https://developer.wordpress.org/themes/features/block-stylesheets/
@@ -100,3 +76,31 @@ function themeslug_block_stylesheets() {
 }
 
 add_action( 'init', 'themeslug_block_stylesheets' );
+
+/**
+ * Register custom block style variations.
+ *
+ * @link https://developer.wordpress.org/themes/features/block-style-variations/
+ * @link https://developer.wordpress.org/reference/functions/register_block_style/
+ */
+
+function themeslug_block_style_variations() {
+	/**
+	 * Description
+	 */
+
+	// register_block_style(
+	// 	'core/_____',
+	// 	array(
+	// 		'name'         => '__________',
+	// 		'label'        => __( '__________', 'themeslug' ),
+	// 		'inline_style' => '
+	// 			.wp-block-_____.is-style-__________ {
+	// 				// Your block styles here...
+	// 			}
+	// 		'
+	// 	)
+	// );
+}
+
+add_action( 'init', 'themeslug_block_style_variations' );
