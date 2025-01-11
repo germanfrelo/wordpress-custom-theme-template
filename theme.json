@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
@@ -400,7 +400,6 @@
 					"fontStyle": "",
 					"fontWeight": "",
 					"lineHeight": "var:custom|line-height|small",
-					"textAlign": "center",
 					"textDecoration": "none",
 					"textTransform": "",
 					"letterSpacing": ""

@@ -23,5 +23,11 @@
 		// Haven't decided yet:
 		// "source.organizeImports": "explicit", // sort imports + remove unused imports
 		"source.sortImports": "explicit"
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "stylelint.vscode-stylelint"
+	},
+	"[svg]": {
+		"editor.defaultFormatter": "jock.svg"
 	}
 }
