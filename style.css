@@ -14,8 +14,8 @@
  * TABLE OF CONTENTS:
  *
  * 1. Global Custom Properties
- * 2. Global Styles
- * 3. Local/Scoped Styles
+ * 2. Global Styles (Elements)
+ * 3. Local/Scoped Styles (WP Blocks)
  *
  * @link https://every-layout.dev/rudiments/global-and-local-styling/
  * @link https://cube.fyi/
@@ -153,7 +153,7 @@
 
 /**
  * ======================================================================
- * 2. Global Styles
+ * 2. Global Styles (Elements)
  *
  * Grouped by function based on
  * https://html.spec.whatwg.org/multipage/#toc-semantics.
@@ -221,7 +221,7 @@ html {
 
 /**
  * ======================================================================
- * 3. Local/Scoped Styles
+ * 3. Local/Scoped Styles (WP Blocks)
  * ======================================================================
  */
 
@@ -232,7 +232,7 @@ html {
  */
 
 /**
- * Let `main` fill the available vertical space so that if the content is shorter than the viewport height, the footer will "stick" to the bottom.
+ * Lets `<main>` fill the available vertical space so that if the content is shorter than the viewport height, the footer will "stick" to the bottom.
  */
 
 .wp-site-blocks:has(> main) {
@@ -250,7 +250,7 @@ html {
 }
 
 /**
- * Remove block spacing between children (header/main/footer)
+ * Removes block spacing between `.wp-site-blocks` children (header-main-footer)
  */
 
 .wp-site-blocks > * + :is(main, footer) {

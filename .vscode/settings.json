@@ -23,5 +23,6 @@
 		// Haven't decided yet:
 		// "source.organizeImports": "explicit", // sort imports + remove unused imports
 		"source.sortImports": "explicit"
-	}
+	},
+	"cSpell.words": ["twentytwentyfive"]
 }
