@@ -1,0 +1,5 @@
+lts/*
+
+# IMPORTANT: Replace lts/* with a specific Node.js version based on your project's requirements.
+# To find the appropriate version for your project, you can use a tool like  https://github.com/voxpelli/node-installed-check
+# Reference: https://github.com/nvm-sh/nvm#nvmrc
