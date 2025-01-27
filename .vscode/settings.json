@@ -1,4 +1,13 @@
 {
+	// JSON
+	"json.schemas": [
+		{
+			"fileMatch": ["theme.json"],
+			"url": "./mythemeschema.json"
+		}
+	],
+	"json.validate.enable": true, // default
+
 	// Formatting
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[markdown]": {
